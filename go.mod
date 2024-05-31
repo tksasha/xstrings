@@ -1,6 +1,6 @@
 module github.com/tksasha/utils
 
-go 1.21
+go 1.22
 
 require gotest.tools/v3 v3.5.1
 

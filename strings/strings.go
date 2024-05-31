@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-// Converts `HelloWorld` to `hello_world`
+// ToSnakeCase converts `HelloWorld` to `hello_world`
 // or `CategoryID` to `category_id`
 // even with UTF support
 // `СлаваУкраїні` to `слава_україні`
@@ -14,7 +14,7 @@ import (
 // use `regexp.MustCompile("([a-z])([A-Z])")` instead
 func ToSnakeCase(input string) string {
 	input = regexp.
-		MustCompile("(\\P{Lu}+)(\\p{Lu}+)").
+		MustCompile(`(\P{Lu}+)(\p{Lu}+)`).
 		ReplaceAllString(input, "${1}_${2}")
 
 	return strings.ToLower(input)
