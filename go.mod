@@ -1,4 +1,4 @@
-module github.com/tksasha/strinx
+module github.com/tksasha/xstrings
 
 go 1.24
 

@@ -1,4 +1,4 @@
-package strinx
+package xstrings
 
 import (
 	"regexp"
