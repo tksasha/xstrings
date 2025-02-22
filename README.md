@@ -1,3 +1,5 @@
-# Golang Utils
+# Golang Strings Utils
 
-* utils/strings
+```go
+strinx.ToSnakeCase(input string) string
+```

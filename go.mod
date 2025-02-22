@@ -1,6 +1,6 @@
-module github.com/tksasha/utils
+module github.com/tksasha/strinx
 
-go 1.22
+go 1.24
 
 require gotest.tools/v3 v3.5.1
 
