@@ -1,6 +1,8 @@
 package xstrings
 
-import "strings"
+import (
+	"strings"
+)
 
 func Transliterate(input string) string {
 	mapping := map[rune][]rune{
@@ -43,6 +45,12 @@ func Transliterate(input string) string {
 	output := []rune{}
 
 	for _, i := range strings.ToLower(input) {
+		if (i >= 'a' && i <= 'z') || (i >= '0' && i <= '9') {
+			output = append(output, i)
+
+			continue
+		}
+
 		rs, ok := mapping[i]
 		if !ok {
 			output = append(output, '_')
